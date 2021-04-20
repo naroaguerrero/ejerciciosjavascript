@@ -8,11 +8,11 @@
   </head>
   <body>
     <script>
-      let numero = parseInt(window.prompt("Escribe el tiempo de tu carrera"));
-      let horas = numero / 3600;
-      let minutos = horas * 6;
-      let segundos = minutos * 6;
-      console.log(parseInt(horas) + " horas, " + parseInt(minutos) + " minutos, " + parseInt(segundos) + "segundos.");
+      let seg=parseInt(window.prompt('Introduce los segundos'))
+      let horas=parseInt(seg/3600)
+      let minutos=parseInt(seg/60/10)
+      let seg=parseInt((horas%0.6)*100)
+      console.log(`horas: ${horas} minutos: ${minutos}, segundos ${segundos}`)
     </script>
   </body>
 </html>

@@ -8,11 +8,13 @@
 </head>
 <body>
     <script>
-        let numero = parseInt(window.prompt('Escribe un número'))
-        let numero2 = parseInt(window.prompt('Escribe otro número'))
-        const numero3 = numero
-        console.log(numero=numero2)
-        console.log(numero2=numero3)
+        let numero = parseInt(window.prompt('Escribe un número'));
+        let numero2 = parseInt(window.prompt('Escribe otro número'));
+        console.log(`Los valores iniciales eran ${numero1} y ${numero2}`);
+        let numero3 = numero1;
+        numero1 = numero2;
+        numero2 = numero3;
+        console.log(`Los valores finales eran ${numero1} y ${numero2}`)
     </script>
 </body>
 </html>

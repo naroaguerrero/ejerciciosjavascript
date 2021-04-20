@@ -8,13 +8,15 @@
 </head>
 <body>
     <script>
-        let numero = parseInt(window.prompt('Escribe la distancia recorrida en metros'))
-        let numero2 = parseInt(window.prompt('¿Cuántas horas has tardado?'))
-        let numero3 = parseInt(window.prompt('¿Cuántas minutos has tardado?'))
-        let numero4 = parseInt(window.prompt('¿Cuántas segundos has tardado?'))
-        let numero5
-        console.log('Has recorrido '+(numero5=numero/(numero2*3600)+(numero3*60)+numero3))
-        console.log('Kilómetros por hora '+ numero5*3.6)
+        let x = parseInt(window.prompt('Escribe la distancia recorrida en metros'));
+        let tiempoH = parseInt(window.prompt('¿Cuántas horas has tardado?'));
+        let tiempoM = parseInt(window.prompt('¿Cuántas minutos has tardado?'));
+        let tiempoS = parseInt(window.prompt('¿Cuántas segundos has tardado?'));
+        let t1 = tiempoH*3600+tiempoM*60+tiempoS
+        let t2 = tiempoH+tiempoM/60+tiempoS/3600
+        let y = x/1000
+        console.log('La velocidad en metros/segundos es '+ x/t1)
+        console.log('Kilómetros por hora '+ y/t2)
     </script>
 </body>
 </html>
